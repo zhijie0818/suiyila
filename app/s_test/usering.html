@@ -1,0 +1,32 @@
+<div class="jumbotron text-center">
+	<h2>用户管理</h2>
+	<p>
+		用户管理的形式一般比较
+		<span class="text-danger">灵活</span>
+		，而且可能随时发生变化。
+	</p>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="list-group">
+						<a ui-sref="#" class="list-group-item active">商品分类</a>
+						<a ui-sref="index.usering.shoes" class="list-group-item ">鞋子</a>
+						<a ui-sref="index.usering.clothing" class="list-group-item ">服装</a>
+						<a ui-sref="index.usering.bags" class="list-group-item ">箱包</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<button class="btn btn-primary" ng-click="addUserType()">
+						新增用户
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div ui-view></div>
+		</div>
+	</div>
+</div>
